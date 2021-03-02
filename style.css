@@ -1,0 +1,398 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  /* Utility Classes */
+  
+  .padded   { padding: 5%;      }
+  .padded-05 {  padding: .5%    }
+  .padded-1 {  padding: 1rem;   }
+  .padded-2 {  padding: 2%;     }
+  .padded-tb {  padding-top: 5%; padding-bottom: 5%;}
+
+  .emphasis {
+    font-size: 1.2rem;
+  }
+  
+  .emphasis-button {
+    border: 2px solid;
+    margin-left: 0.5rem;
+    display: inline-block;
+  }
+
+  .caps {text-transform: uppercase;}
+
+  .fixed {
+    display: block;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 2;
+      color: #7c6794;
+      background-color: #f4f2fe;
+      border-bottom: 2px solid #f77728;
+  }
+
+  .bg-light { 
+    background-color: #c0a9db;
+    color: white;
+}
+  
+  .bg-dark {
+    background-color: #68020f;/*#64766a;*/
+    color: #f0f0ef;
+  }
+  
+  .bg-image {
+    background-size: cover;
+    background-position: center;
+    background-color: #64766a;
+  }
+
+  .bg-yoga {
+    background-image:url('/images/wesual-click.jpg');
+  }
+  
+  .button-solid {
+    color: white;
+    background-color: #f77728;
+    border-color:#f77728;
+    text-decoration: none;
+    cursor: pointer;
+    height: auto;
+  }
+
+  .button-solid:hover {
+    background-color: rgb(83, 82, 82);
+    border-color: rgb(60, 60, 60);
+  }
+  
+  /* Universal Element Styles */
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    color: rgb(51, 48, 53);
+    background-color: #f4f2fe; /* #f4f2fe; /* rgb(142, 160, 142);*/
+  }
+  
+  h2, h3, h4 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 2.8rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* header & footer */
+  .mobile-display {
+    display: none;
+  }
+  header {
+    padding: 1% 5%;
+  }
+  
+  header a {
+      text-decoration: none;
+      color: #7c6794;
+      padding: 0.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+  }
+  header a:hover {
+    color: #c0a9db;
+  }
+  header h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+
+  footer nav a {
+    display:block;
+    padding: 0.25rem;
+    font-size: 0.9rem;
+  }
+  
+  
+  footer a:hover {
+    color: #c0a9db;
+  }
+  
+  footer .fab {
+    font-size: 2rem;
+  }
+  
+  
+  
+  /* ------------ Banner ---------- */
+  
+  .banner {
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+  }
+  
+  .banner h3 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  
+  .banner h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+  }
+
+  .banner-middle {
+      min-height: 50vh;
+      background-repeat: none;
+      background-position: top;
+      background-size: cover;
+  }
+  
+  /* This prevents the sections from having a blue outline when we click to them from the menu */
+  
+  section:focus,
+  footer:focus  {
+    outline: none;
+  }
+ 
+  .logo {
+      text-transform: capitalize;
+      color: #7c6794;
+  }
+  
+  /* clickable boxes */
+
+.clickable-box {
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 rgba(0, 0, 0, 0); /* so that we can add a transition */
+    transition: 0.2s all;
+    display: block;
+  }
+  
+  .clickable-box .overlay {
+    min-height: 12rem;
+    padding: 3rem 1rem;
+    background-color: rgba(0,0,10,0.4);
+    color: white;
+  }
+  
+  .clickable-box p {
+    margin-bottom: 0;
+  }
+  
+  .clickable-box:hover {
+    background-color: rgba(0,0,10,0.6);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+    margin-top:-2px;
+  }
+  
+  /* reviews css */ 
+  hr { /* this is a line element */
+    border: none;
+    border-bottom: 3px solid;
+    width: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-small {
+    max-width: 8rem;
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* memberships css */
+
+  .no-bullets { list-style:none; }
+  
+/* Used to remove dot-points from a list */
+.card {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.card.featured {
+  border: 2px solid orange;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.pricing-name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(120,120,125);
+}
+
+.card .button {
+  margin-top:2rem;
+}
+
+  /* location css */
+  
+
+.bg-wood {
+background-image: url('/images/ales-krivec.jpg');
+background-position: left;
+}
+
+  /* custom footer css */
+
+  .inline a {
+    display:inline-block;
+    padding: 0.5rem;
+  }
+
+  /* ------------- Utility Classes from IOC Modular --------------  */
+  
+    .left     {  text-align: left;     }
+    .right    {  text-align: right;    }
+    .centered {  text-align: center;   }
+
+
+      /* Form Subscription CSS */
+
+      input {
+        border-style: solid;
+        border: 2px solid rgb(200, 200, 205);
+        padding: 0.8em;
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+        
+      }
+      
+      input:focus,
+      textarea:focus {
+        outline: none;
+        border: 2px solid #e67e22;
+        /* featured color */
+      }
+      
+      textarea {
+        min-height: 7em;
+      }
+      
+      input[type="submit"] {
+        width: auto;
+        display: block;
+      }
+      
+      form [class*=col-] {
+        padding: 5px;
+      }
+      
+      .email-signup input {
+        width: 30%;
+        display: inline-block;
+        max-width: 250px;
+        margin-top:1rem;
+      }
+      
+      
+      
+        @media(max-width:768px) {
+         .email-signup input {
+           width: 100%;
+           max-width: 100%;
+         }
+        }
+         @Media(max-width: 768px) {
+            .email-signup .button-solid {
+                height: auto;
+                border: none;
+                color: white;
+         }
+       }
+
+
+  /* Media Queries */
+  
+  @media(max-width:768px) {
+  
+    /* you can add this class to any element that you want to hide on mobile. We've used a selector that includes the id of the body to ensure that this is a very specific selector and we don't have any specificity issues */
+    #body .mobile-hide {
+      display: none;
+    }
+
+    #body .mobile-display {
+      display: block;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 2;
+      color: #7c6794;
+      background-color: #f4f2fe;
+      border-bottom: 2px solid #f77728;
+  }
+  
+    /* add the class to the parent container, the one that has the 'grid' class, of columns that you want to reverse on mobile. So if you have 4 sections with 2 columns each you would add it to every second section. */
+    .reverse-on-mobile {
+      flex-direction: column-reverse;
+    }
+  
+    .bg-image {
+      padding-bottom: 60%;
+    }
+  
+    .banner {
+      min-height: 80vh;
+    }
+
+    header a {
+        padding: 2% 0 2% 0;
+        display: inline-block;
+        font-size: .8rem;
+    }
+    
+    header {
+        padding-top: 5%;
+    }
+  
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  
+    .center {
+      text-align: left;
+    }
+
+    .mobile-center {
+      text-align:center;
+    }
+  
+    .mobile-hide {
+      display: none;
+    }
+
+    .padded-mobile {
+      padding: 5%;
+    }
+  
+  }
