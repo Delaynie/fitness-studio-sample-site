@@ -44,8 +44,12 @@
 }
   
   .bg-dark {
-    background-color: #68020f;/*#64766a;*/
-    color: #f0f0ef;
+    background-color: #334466; /* #68020f;/*#64766a;*/
+    color: #f4f2fe;
+  }
+
+  .light-theme {
+    background-color: #f4f2fe;
   }
   
   .bg-image {
@@ -77,9 +81,11 @@
   body {
     font-family: 'Lato', sans-serif;
     color: rgb(51, 48, 53);
-    background-color: #f4f2fe; /* #f4f2fe; /* rgb(142, 160, 142);*/
+    background-color:#334466; /* rgb(142, 160, 142);*/
   }
   
+  
+
   h2, h3, h4 {
     font-weight: 400;
     margin-bottom: 1rem;
@@ -175,7 +181,6 @@
       text-transform: capitalize;
       color: #7c6794;
   }
-  
   /* clickable boxes */
 
 .clickable-box {
@@ -206,9 +211,8 @@
   /* reviews css */ 
   hr { /* this is a line element */
     border: none;
-    border-bottom: 3px solid;
-    width: 4rem;
-    margin-bottom: 1rem;
+    border-bottom: 3px solid #f4f2fe;
+    
   }
   
   .profile-small {
@@ -246,14 +250,6 @@
 
 .card .button {
   margin-top:2rem;
-}
-
-  /* location css */
-  
-
-.bg-wood {
-background-image: url('/images/ales-krivec.jpg');
-background-position: left;
 }
 
   /* custom footer css */
