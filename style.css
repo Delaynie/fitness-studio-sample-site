@@ -66,15 +66,16 @@
   .button-solid {
     color: white;
     background-color: #f77728;
-    border-color:#f77728;
     text-decoration: none;
     cursor: pointer;
     height: auto;
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .button-solid:hover {
-    background-color: rgb(83, 82, 82);
-    border-color: rgb(60, 60, 60);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 10, 0.4);
   }
   
   /* Universal Element Styles */
@@ -122,7 +123,7 @@
       text-transform: uppercase;
   }
   header a:hover {
-    color: #c0a9db;
+    color: #42394d;
   }
   header h1 {
     text-transform: uppercase;
@@ -344,6 +345,25 @@
       border-bottom: 2px solid #f77728;
   }
   
+  header a {
+    padding: 2% 0 2% 0;
+    display: inline-block;
+    font-size: .8rem;
+  }
+
+  header {
+    padding-top: 5%;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
     /* add the class to the parent container, the one that has the 'grid' class, of columns that you want to reverse on mobile. So if you have 4 sections with 2 columns each you would add it to every second section. */
     .reverse-on-mobile {
       flex-direction: column-reverse;
@@ -355,25 +375,6 @@
   
     .banner {
       min-height: 80vh;
-    }
-
-    header a {
-        padding: 2% 0 2% 0;
-        display: inline-block;
-        font-size: .8rem;
-    }
-    
-    header {
-        padding-top: 5%;
-    }
-  
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-    }
-  
-    p {
-      font-size: 1.2rem;
     }
   
     .center {
@@ -390,6 +391,13 @@
 
     .padded-mobile {
       padding: 5%;
+    }
+
+    .mobile-size {
+      height: 180px;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      overflow-y: hidden;
     }
   
   }
