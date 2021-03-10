@@ -13,6 +13,7 @@
   .padded-1 {  padding: 1rem;   }
   .padded-2 {  padding: 2%;     }
   .padded-tb {  padding-top: 5%; padding-bottom: 5%;}
+  .padded-t { padding-top: 5%;}
   .pad-marg-pic { padding: .05; margin: 5% 0 5% 0; }
 
   .emphasis {
