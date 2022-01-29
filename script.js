@@ -1,5 +1,3 @@
-// This is javascript code to make the page smoothly scroll rather than jump to each section. It's not part of the course, we just included it to make your website look amazing! //
-
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
