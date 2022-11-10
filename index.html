@@ -8,11 +8,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- this is gridlex for our grid layouts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
-    <!-- Google fonts -- might use these for the cookie jar/bakery page --> 
-    <!-- 300 - light, 400 - regular, 700- bold, 900 - black -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900" rel="stylesheet">
 
     <!-- Form Spree button 
@@ -21,15 +18,10 @@
   window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
   formbutton("create", {action: "https://formspree.io/f/xrgoweyq"})
 </script> -->
-<!-- This adds jquery and smooth scrolling! -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="script.js"></script>
 
-    
-    <!-- This is our custom stylesheet, it always goes last -->
-    <link href="style.css" rel="stylesheet">
-
-  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="style.css" rel="stylesheet">
+</head>
 
   <!-- This is the main content of the page -->
   <body id="body">
@@ -38,8 +30,8 @@
     <div class="centered mobile-display">
       <a href="#body"> <h2 style="padding-top:5%">LOGO</h2>
       </a>
-    <header class="centered">
-        <nav class="grid padded-2">
+    <header class="centered padded-2">
+        <nav class="grid">
           <a class="sm_col-6" href="#classes"> Classes </a>
           <a class="sm_col-6" href="#memberships"> Memberships </a>
           <a class="sm_col-6" href="#locations"> Locations </a>
@@ -62,10 +54,10 @@
 
       <!-- this is our intro banner section -->
       
-      <section class="grid bg-dark">
-        <div class="banner bg-yoga col-6_sm-12" style="background-image: url('/images/sonnie-hiles.jpg');">
+      <section class="grid bg-dark green">
+        <div class="banner bg-yoga col-6" style="background-image: url('/images/sonnie-hiles.jpg');">
         </div>
-        <div class="col-6_sm-12-middle padded">
+        <div class="col-6 padded">
           <a href="/"> <h2 style="color: #e3caff;">Welcome Message</h2>
           </a>
           <p class="emphasis padded-mobile"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -298,5 +290,6 @@
     <br>
    <p class="centered padded-mobile" style="color: #f4f2fe; font-size: 18px;">Sample built by Delaynie Wheeler; 2021 all rights reserved.</p>
    
+   <script src="script.js"></script>
   </body>
 </html>
