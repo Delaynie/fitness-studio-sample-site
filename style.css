@@ -115,7 +115,7 @@
     display: none;
   }
   header {
-    padding: 1% 5%;
+    padding: 1% 3%;
   }
   
   header a {
@@ -338,7 +338,7 @@
     /* you can add this class to any element that you want to hide on mobile. We've used a selector that includes the id of the body to ensure that this is a very specific selector and we don't have any specificity issues */
    /* #body .mobile-hide {
       display: none;
-    }
+    }*/
 
     #body .mobile-display {
       display: block;
@@ -350,7 +350,7 @@
       color: #7c6794;
       background-color: #f4f2fe;
       border-bottom: 2px solid #f77728;
-  }*/
+  }
   
   header a {
     padding: 2% 0 2% 0;
