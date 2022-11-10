@@ -310,13 +310,13 @@
         margin-top:1rem;
       }
       
-        @media(max-width:800px) {
+        @media(max-width:750px) {
          .email-signup input {
            width: 100%;
            max-width: 100%;
          }
         }
-         @Media(max-width: 800px) {
+         @Media(max-width: 750px) {
             .email-signup .button-solid {
                 height: auto;
                 border: none;
@@ -327,7 +327,7 @@
 
   /* Media Queries */
   
-  @media(max-width:800px) {
+  @media(max-width:750px) {
   
     /* you can add this class to any element that you want to hide on mobile. We've used a selector that includes the id of the body to ensure that this is a very specific selector and we don't have any specificity issues */
     #body .mobile-hide {
@@ -349,7 +349,7 @@
   header a {
     padding: 2% 0 2% 0;
     display: inline-block;
-    font-size: .8rem;
+    font-size: 10px;
   }
 
   header {
@@ -402,8 +402,8 @@
     }
 
     .green {
-      margin-top: 2%;
-      padding-top: 5%;
+      margin-top: 10%;
+      padding-top: 15%;
     }
   
   }
